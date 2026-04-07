@@ -223,7 +223,7 @@ input {
 }
 
 .book-image {
-    width: 250px;
+    width: 230px;               /* ← INCREASED FROM 200px TO 230px (15% bigger) */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -256,7 +256,7 @@ input {
     }
     
     .book-image {
-        width: 180px;
+        width: 207px;           /* ← TABLET SIZE: 180px + 15% = 207px */
     }
 }
 
@@ -281,7 +281,7 @@ input {
     }
     
     .book-image {
-        width: 150px;
+        width: 172px;           /* ← MOBILE SIZE: 150px + 15% = 172px */
     }
     
     .book-description-section {
