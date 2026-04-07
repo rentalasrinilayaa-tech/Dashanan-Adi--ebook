@@ -262,22 +262,19 @@ input {
     background-color: #e6d9f2;
     border: 2px solid #d4a5e0;
     border-radius: 10px;
-    padding: 25px;
-    width: 320px;                               /* ← ADJUSTED WIDTH */
-    max-width: 90vw;                            /* ← PREVENT OVERFLOW */
+    padding: 20px;
+    width: 280px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     z-index: 500;
-    overflow: hidden;                           /* ← PREVENT CONTENT OVERFLOW */
 }
 
 .purchase-title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     color: #4a2d5f;
     margin-bottom: 15px;
     text-align: center;
-    word-wrap: break-word;                      /* ← ALLOW WORD WRAPPING */
-    overflow-wrap: break-word;                  /* ← MODERN BROWSERS */
+    line-height: 1.4;
 }
 
 .purchase-links {
@@ -292,7 +289,7 @@ input {
     font-weight: 600;
     transition: 0.3s;
     font-size: 15px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 5px;
     text-align: center;
     display: block;
@@ -317,12 +314,12 @@ input {
 
     .purchase-box {
         right: 20px;
-        width: 300px;
-        padding: 20px;
+        width: 260px;
+        padding: 18px;
     }
 
     .purchase-title {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .purchase-links a {
@@ -368,7 +365,6 @@ input {
         width: 100%;
         margin: 30px 20px;
         padding: 20px;
-        max-width: 100%;
     }
 
     .purchase-title {
