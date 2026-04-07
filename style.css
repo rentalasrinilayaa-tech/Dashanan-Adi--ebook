@@ -221,7 +221,7 @@ input {
 /* BOOK IMAGE SECTION */
 .book-image-section {
     flex-shrink: 0;
-    padding-top: 20px;               /* ← MOVES IMAGE DOWN */
+    padding-top: 20px;
 }
 
 .book-image {
@@ -250,6 +250,56 @@ input {
     text-align: justify;
 }
 
+/* ======================== */
+/* PURCHASE BOX - LILAC     */
+/* ======================== */
+
+.purchase-box {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e6d9f2;                   /* ← LIGHT LILAC COLOR */
+    border: 2px solid #d4a5e0;                   /* ← DARKER LILAC BORDER */
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 500;
+}
+
+.purchase-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4a2d5f;                              /* ← DARK PURPLE TEXT */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.purchase-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.purchase-links p {
+    font-size: 14px;
+    color: #4a2d5f;
+    margin: 0;
+}
+
+.purchase-links a {
+    color: #0a4cff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.purchase-links a:hover {
+    color: #003ecb;
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .book-container {
@@ -259,6 +309,20 @@ input {
     
     .book-image {
         width: 207px;
+    }
+
+    .purchase-box {
+        right: 20px;
+        width: 280px;
+        padding: 20px;
+    }
+
+    .purchase-title {
+        font-size: 14px;
+    }
+
+    .purchase-links p {
+        font-size: 13px;
     }
 }
 
@@ -292,5 +356,12 @@ input {
     
     .book-description-section {
         max-width: 100%;
+    }
+
+    .purchase-box {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin: 30px 20px;
     }
 }
