@@ -1,5 +1,5 @@
 /* ------------------------- */
-/* YOUR ORIGINAL CSS         */
+/* GLOBAL RESET              */
 /* ------------------------- */
 
 * {
@@ -17,6 +17,68 @@ html, body {
 body {
     font-family: Arial, sans-serif;
 }
+
+/* ------------------------- */
+/* NAVIGATION BAR (UPDATED) */
+/* ------------------------- */
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center everything */
+    align-items: center;
+    background: #555555;
+    padding: 15px 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Center container for title + subtitle */
+.nav-center {
+    text-align: center;
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.nav-subtitle {
+    font-size: 13px;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+/* Remove old left/right nav button styling */
+.nav-left,
+.nav-right,
+.side-btn {
+    display: none !important;
+}
+
+/* ------------------------- */
+/* HERO SECTION (DISABLED)  */
+/* ------------------------- */
+
+.hero-section {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero-title,
+.hero-subtitle {
+    display: none;
+}
+
+/* ------------------------- */
+/* AUTHOR SECTION            */
+/* ------------------------- */
 
 .author-section {
     display: flex;
@@ -46,74 +108,10 @@ body {
     }
 }
 
-/* NAVIGATION BAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #555555;
-    padding: 10px 20px;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    flex-wrap: nowrap;
-    box-sizing: border-box;
-}
+/* ------------------------- */
+/* MODALS                    */
+/* ------------------------- */
 
-.nav-left button,
-.nav-right button {
-    padding: 8px 12px;
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-}
-
-/* HOME / ABOUT AUTHOR BUTTONS */
-.side-btn {
-    background: #ffffff;
-    color: #0a4cff;
-    border: 2px solid #ffffff;
-    padding: 10px 15px;
-    margin-right: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.side-btn:hover {
-    background: #dce6ff;
-    border-color: #dce6ff;
-}
-
-/* SIGN IN / SIGN UP BUTTONS */
-.auth-btn {
-    background: #ffffff;
-    color: #0a4cff;
-    border: 2px solid #ffffff;
-    padding: 10px 15px;
-    margin-left: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.auth-btn:hover {
-    background: #dce6ff;
-    border-color: #dce6ff;
-}
-
-/* MODAL STYLING */
 .modal {
     display: none;
     position: fixed;
@@ -162,7 +160,10 @@ input {
     background: #333;
 }
 
-/* READ BOOK BUTTON */
+/* ------------------------- */
+/* READ BOOK BUTTON          */
+/* ------------------------- */
+
 .read-btn {
     background: #0a4cff;
     color: white;
@@ -180,45 +181,19 @@ input {
     background: #003ecb;
 }
 
-/* HERO SECTION - COMPACT */
-.hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding-top: 70px;
-    padding-bottom: 20px;
-    background-color: #e8e8e8;
-    min-height: auto;
-}
+/* ------------------------- */
+/* BOOK CONTAINER            */
+/* ------------------------- */
 
-.hero-title {
-    font-size: 28px;
-    font-weight: 700;
-    color: #000000;
-    margin: 10px 0 8px 0;
-}
-
-.hero-subtitle {
-    font-size: 14px;
-    color: #555555;
-    margin: 0;
-    font-weight: 400;
-}
-
-/* BOOK CONTAINER - FLEX LAYOUT */
 .book-container {
     display: flex;
     gap: 40px;
     padding: 40px;
-    margin-top: 20px;
+    margin-top: 100px; /* Adjusted because navbar is taller */
     background-color: #e8e8e8;
     align-items: flex-start;
 }
 
-/* BOOK IMAGE SECTION */
 .book-image-section {
     flex-shrink: 0;
     padding-top: 20px;
@@ -231,7 +206,6 @@ input {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* BOOK DESCRIPTION SECTION */
 .book-description-section {
     max-width: 600px;
     flex: 1;
@@ -250,9 +224,9 @@ input {
     text-align: justify;
 }
 
-/* ======================== */
-/* ABOUT AUTHOR BOX         */
-/* ======================== */
+/* ------------------------- */
+/* ABOUT AUTHOR BOX          */
+/* ------------------------- */
 
 .about-author-box {
     display: flex;
@@ -295,9 +269,9 @@ input {
     text-align: justify;
 }
 
-/* ======================== */
-/* PURCHASE BOX - LILAC     */
-/* ======================== */
+/* ------------------------- */
+/* PURCHASE BOX              */
+/* ------------------------- */
 
 .purchase-box {
     position: fixed;
@@ -346,7 +320,10 @@ input {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* ------------------------- */
+/* RESPONSIVE DESIGN         */
+/* ------------------------- */
+
 @media (max-width: 1024px) {
     .book-container {
         gap: 30px;
@@ -383,35 +360,16 @@ input {
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        padding-top: 65px;
-        padding-bottom: 15px;
-    }
-    
-    .hero-title {
-        font-size: 22px;
-    }
-    
-    .hero-subtitle {
-        font-size: 12px;
-    }
-    
+
     .book-container {
         flex-direction: column;
         gap: 20px;
         padding: 20px;
+        margin-top: 120px;
     }
-    
-    .book-image-section {
-        padding-top: 0;
-    }
-    
+
     .book-image {
         width: 172px;
-    }
-    
-    .book-description-section {
-        max-width: 100%;
     }
 
     .about-author-box {
@@ -433,10 +391,6 @@ input {
         height: 150px;
     }
 
-    .author-content-section {
-        max-width: 100%;
-    }
-
     .author-content-section h2 {
         font-size: 22px;
     }
@@ -451,9 +405,5 @@ input {
         width: 100%;
         margin: 30px 20px;
         padding: 20px;
-    }
-
-    .purchase-title {
-        font-size: 14px;
     }
 }
