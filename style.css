@@ -54,14 +54,14 @@ body {
 }
 
 .nav-title {
-    font-size: 26px;
+    font-size: 40px;
     font-weight: 700;
     margin: 0;
     font-family: 'Gabriola', 'Segoe Script', 'Comic Sans MS', cursive, sans-serif;
 }
 
 .nav-subtitle {
-    font-size: 14px;
+    font-size: 22px;
     margin-top: 4px;
     color: #e0e0e0;
     font-family: 'Gabriola', 'Segoe Script', 'Comic Sans MS', cursive, sans-serif;
