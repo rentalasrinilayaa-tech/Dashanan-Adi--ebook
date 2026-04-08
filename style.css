@@ -22,12 +22,13 @@ body {
 /* NAVIGATION BAR (UPDATED) */
 /* ------------------------- */
 
+/* FIXED NAVIGATION BAR – MORE HEIGHT + SPACING */
 .navbar {
     display: flex;
-    justify-content: center; /* Center everything */
+    justify-content: center;
     align-items: center;
     background: #555555;
-    padding: 15px 20px;
+    padding: 22px 20px; /* increased from 15px */
     color: white;
     position: fixed;
     top: 0;
@@ -39,27 +40,26 @@ body {
 /* Center container for title + subtitle */
 .nav-center {
     text-align: center;
+    line-height: 1.3; /* prevents text from overlapping */
 }
 
+/* Title inside navbar */
 .nav-title {
-    font-size: 24px;
+    font-size: 26px; /* slightly larger */
     font-weight: 700;
-    margin: 0;
+    margin-bottom: 4px; /* spacing between title & subtitle */
 }
 
+/* Subtitle inside navbar */
 .nav-subtitle {
-    font-size: 13px;
-    margin: 0;
+    font-size: 14px;
     color: #e0e0e0;
 }
 
-/* Remove old left/right nav button styling */
-.nav-left,
-.nav-right,
-.side-btn {
-    display: none !important;
+/* Add space below navbar so content doesn't hide behind it */
+.book-container {
+    margin-top: 140px !important; /* increased from 100px */
 }
-
 /* ------------------------- */
 /* HERO SECTION (DISABLED)  */
 /* ------------------------- */
