@@ -3,116 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kranti - E-Book Platform</title>
+    <title>Dashanan: Ādi | Read Chapter 1</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- TOP NAVIGATION BAR -->
-    <nav class="navbar">
-    <div class="nav-center">
-        <h1 class="nav-title">Dashanan: Ādi</h1>
-        <p class="nav-subtitle">Part-I of the Dashanan series</p>
-    </div>
-</nav>
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-image-wrap">
+                <img src="book.jpg" alt="Dashanan: Ādi book cover" class="book-cover">
+            </div>
 
-    <!-- SIGN IN MODAL -->
-    <div id="signinModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('signinModal')">&times;</span>
-            <h2>Sign In</h2>
-            <form>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit" class="submit-btn">Sign In</button>
-            </form>
+            <div class="hero-content">
+                <p class="eyebrow">Book I of the Dashanan series</p>
+                <h1>Dashanan: Ādi</h1>
+                <p class="hero-subtitle">A mythic science fiction novel rooted in Indian itihasa</p>
+
+                <p class="hero-text">
+                    Read Chapter 1 free and step into a reimagined world where memory returns,
+                    destiny shifts, and Dashanan’s story begins again.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="chapter 1 doc.pdf" target="_blank" class="btn btn-primary">Read Chapter 1</a>
+                    <a href="#buy" class="btn btn-secondary">Buy the Full Book</a>
+                </div>
+
+                <div class="hero-meta">
+                    <span>Mythological Fiction</span>
+                    <span>Science Fiction</span>
+                    <span>By Kranti Gopaluni</span>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <!-- SIGN UP MODAL -->
-    <div id="signupModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('signupModal')">&times;</span>
-            <h2>Sign Up</h2>
-            <form>
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <input type="password" placeholder="Confirm Password" required>
-                <button type="submit" class="submit-btn">Create Account</button>
-            </form>
+    <!-- ABOUT THE BOOK -->
+    <section class="section">
+        <div class="container narrow">
+            <div class="section-heading">
+                <p class="section-label">Overview</p>
+                <h2>About the book</h2>
+            </div>
+
+            <div class="content-card">
+                <p>
+                    Like a seed that fights its way through the soil to reach the light, years of quiet effort
+                    have broken the surface in the form of <em>Dashanan: Ādi</em>. In this novel, the author
+                    reimagines Dashanan—one of India’s most complex figures: a peerless scholar, a master
+                    of the scriptures, and an uncompromising devotee of Mahadev.
+                </p>
+
+                <p>
+                    The story opens with the echo of “Jai Sri Ram,” a child’s innocent questions, and a
+                    grandfather’s startling tale of Dashanan’s revival. From that moment, the familiar outline
+                    of the Ramayana begins to shift.
+                </p>
+
+                <blockquote class="highlight-quote">
+                    What if Dashanan’s story did not end on the battlefield of Lanka — and what if the seeds
+                    of his return were sown deep within the very fabric of time?
+                </blockquote>
+
+                <p>
+                    While rooted in the timeless world of Indian itihasa, <em>Dashanan: Ādi</em> is, at its core,
+                    a work of science fiction. It fuses myth and molecular science, destiny and design, to
+                    explore a question that echoes beneath the epics.
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- MAIN CONTENT - BOOK SECTION WITH IMAGE AND DESCRIPTION -->
-    <div class="book-container">
-        
-        <!-- LEFT SIDE - BOOK IMAGE -->
-        <div class="book-image-section">
-            <img src="book.jpg" alt="Dashanan: Ādi" class="book-image">
+    <!-- FREE CHAPTER -->
+    <section class="section section-alt" id="chapter1">
+        <div class="container narrow">
+            <div class="section-heading">
+                <p class="section-label">Free reading</p>
+                <h2>Read Chapter 1</h2>
+            </div>
+
+            <div class="reader-card">
+                <p class="reader-intro">
+                    Start reading the opening chapter and experience the first turn in Dashanan’s return.
+                </p>
+
+                <div class="reader-actions">
+                    <a href="chapter 1 doc.pdf" target="_blank" class="btn btn-primary">Open Chapter 1 PDF</a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- RIGHT SIDE - BOOK DESCRIPTION -->
-        <div class="book-description-section">
-            <h2>About the book</h2>
-            <br>
-            
-            <p>
-                Like a seed that fights its way through the soil to reach the light, years of quiet effort have broken the surface in the form of Dashanan: Ādi. 
-                In this novel, the author reimagines Dashanan—one of India's most complex figures: a peerless scholar, a master of the scriptures, and an uncompromising devotee of Mahadev.
-            </p>
-            <br>
+    <!-- ABOUT THE AUTHOR -->
+    <section class="section">
+        <div class="container narrow">
+            <div class="section-heading">
+                <p class="section-label">Author</p>
+                <h2>About the author</h2>
+            </div>
 
-            <p>
-                The story opens with the echo of "Jai Sri Ram," a child's innocent questions, and a grandfather's startling tale of Dashanan's revival. 
-                From that moment, the familiar outline of the Ramayana begins to shift.
-            </p>
-            <br>
+            <div class="content-card">
+                <p>
+                    Born in Kurnool, India and now based in Boston, USA, Kranti Gopaluni works as a scientist
+                    in the biotech industry. His professional life is rooted in data, experiments, and detail,
+                    but his imagination has long been shaped by the stories and figures of Indian itihasa.
+                </p>
 
-            <p>
-                While rooted in the timeless world of Indian itihasa, Dashanan: Ādi is, at its core, a work of science fiction. 
-                It fuses myth and molecular science, destiny and design, to explore a question that echoes beneath the epics: What if Dashanan's story did not end on the battlefield of Lanka—and what if the seeds of his return were sown deep within the very fabric of time?
-            </p>
-            <br>
+                <p>
+                    <em>Dashanan: Ādi</em> is his first novel and the first book of a trilogy, conceived as a
+                    tribute to Dashanan and to the fierce devotion of the Shiva Tandava Stotram. In it, he
+                    weaves together a modern scientific lens with ancient epic tradition.
+                </p>
 
-            <!-- Read Chapter BUTTON -->
-            <button class="read-btn" onclick="window.open('chapter 1 doc.pdf', '_blank')">Read Chapter 1</button>
+                <p>
+                    Outside of work and writing, Kranti enjoys hiking and camping, drawing inspiration from
+                    time spent in nature.
+                </p>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <!-- BUY SECTION -->
+    <section class="section buy-section" id="buy">
+        <div class="container">
+            <div class="section-heading center-heading">
+                <p class="section-label">Purchase</p>
+                <h2>Buy the full book</h2>
+                <p class="section-subcopy">Available on the following platforms</p>
+            </div>
 
-  <!-- ABOUT AUTHOR SECTION + PURCHASE BOX ASIDE -->
-<div class="about-author-area">
-    <div class="about-author-box">
-        <div class="author-content-section">
-            <h2>About the Author</h2>
-            <br>
-            <p>
-                Born in Kurnool, India and now based in Boston, USA, 'Kranti' Gopaluni works as a scientist in the biotech industry.
-                His professional life is rooted in data, experiments, and detail, but his imagination has long been shaped by the
-                stories and figures of Indian itihasa.
-            </p>
-            <br>
-            <p>
-                <em>Dashanan: Ādi</em> is his first novel and is first of the trilogy, conceived as a tribute to Dashanan and to the fierce devotion of the
-                Shiva Tandava Stotram. In it, he weaves together a modern scientific lens with ancient epic tradition. 
-                <br>
-                Outside of work and writing, Kranti enjoys hiking and camping, drawing inspiration from time spent in nature.
-            </p>
+            <div class="buy-grid">
+                <a class="buy-card" href="https://amzn.in/d/05gUKKoo" target="_blank" rel="noopener noreferrer">
+                    <span class="buy-platform">Amazon</span>
+                    <span class="buy-action">Buy now</span>
+                </a>
+
+                <a class="buy-card" href="https://www.flipkart.com/dashanan/p/itm9478e3f89640d?pid=9798902073222&lid=LSTBOK9798902073222BPDOXB&marketplace=FLIPKART&q=Dashanan+Book&store=bks&srno=s_1_7&otracker=search&otracker1=search&fm=Search&iid=137af8a1-219a-46ff-9453-908e1dbb6d08.9798902073222.SEARCH&ppt=clp&ppn=books-store&ssid=ia2454ir4w0000001775675749166&qH=b9aebbcd0d4877b8&ov_redirect=true&ov_redirect=true" target="_blank" rel="noopener noreferrer">
+                    <span class="buy-platform">Flipkart</span>
+                    <span class="buy-action">Buy now</span>
+                </a>
+
+                <a class="buy-card" href="https://notionpress.com/in/read/dashanan-di?book=published&utm_source=share_publish_email&utm_medium=email" target="_blank" rel="noopener noreferrer">
+                    <span class="buy-platform">Notion Press</span>
+                    <span class="buy-action">Buy now</span>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="purchase-box">
-        <p class="purchase-title">Purchase the entire book</p>
-        <div class="purchase-links">
-            <a href="https://amzn.in/d/05gUKKoo" target="_blank">Amazon</a>
-            <a href="https://www.flipkart.com/dashanan/p/itm9478e3f89640d?pid=9798902073222&lid=LSTBOK9798902073222BPDOXB&marketplace=FLIPKART&q=Dashanan+Book&store=bks&srno=s_1_7&otracker=search&otracker1=search&fm=Search&iid=137af8a1-219a-46ff-9453-908e1dbb6d08.9798902073222.SEARCH&ppt=clp&ppn=books-store&ssid=ia2454ir4w0000001775675749166&qH=b9aebbcd0d4877b8&ov_redirect=true&ov_redirect=true" target="_blank">Flipkart</a>
-            <a href="https://notionpress.com/in/read/dashanan-di?book=published&utm_source=share_publish_email&utm_medium=email" target="_blank">Notion Press</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 Dashanan series. All rights reserved.</p>
         </div>
-    </div>
-</div>
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
+    </footer>
 
 </body>
 </html>
