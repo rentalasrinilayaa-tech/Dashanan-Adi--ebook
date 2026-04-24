@@ -140,7 +140,8 @@
             </div>
 
             <div class="buy-grid">
-                <a class="buy-card" href="https://amzn.in/d/05gUKKoo" target="_blank" rel="noopener noreferrer">
+                <!-- UPDATED AMAZON LINK -->
+                <a id="amazonLink" class="buy-card" href="#" target="_blank" rel="noopener noreferrer">
                     <span class="buy-platform">Amazon</span>
                     <span class="buy-action">Buy now</span>
                 </a>
@@ -164,6 +165,27 @@
             <p>© 2025 Dashanan series. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- LOCATION-BASED AMAZON LINK SCRIPT -->
+    <script>
+        fetch("https://ipapi.co/json/")
+            .then(response => response.json())
+            .then(data => {
+                const country = data.country_code;
+                const amazon = document.getElementById("amazonLink");
+
+                if (country === "IN") {
+                    amazon.href = "https://amzn.in/d/05gUKKoo";
+                } else if (country === "US") {
+                    amazon.href = "https://a.co/d/09SGWZK7";
+                } else {
+                    amazon.href = "https://a.co/d/09SGWZK7"; // fallback
+                }
+            })
+            .catch(() => {
+                document.getElementById("amazonLink").href = "https://a.co/d/09SGWZK7";
+            });
+    </script>
 
 </body>
 </html>
