@@ -204,15 +204,12 @@
                 }
 
                 amazon.href = amazonUrl;
-                amazonReviewLink.href = amazonUrl;
-                amazonReviewButton.href = amazonUrl;
+                amazonReviewButton.href = amazonUrl;  
             })
-            .catch(() => {
-                const fallbackAmazonUrl = "https://a.co/d/09SGWZK7";
-
-                document.getElementById("amazonLink").href = fallbackAmazonUrl;
-                document.getElementById("amazonReviewLink").href = fallbackAmazonUrl;
-                document.getElementById("amazonReviewButton").href = fallbackAmazonUrl;
+           .catch(() => {
+            const fallbackAmazonUrl = "https://a.co/d/09SGWZK7";
+            document.getElementById("amazonLink").href = fallbackAmazonUrl;
+            document.getElementById("amazonReviewButton").href = fallbackAmazonUrl; 
             });
     </script>
 
