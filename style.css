@@ -173,6 +173,16 @@ a {
     border-color: rgba(255, 255, 255, 0.45);
 }
 
+.btn-outline {
+    background: transparent;
+    color: var(--accent-dark);
+    border: 1px solid var(--accent);
+}
+
+.btn-outline:hover {
+    background: rgba(176, 122, 42, 0.08);
+}
+
 /* SECTIONS */
 .section {
     padding: 84px 0;
@@ -297,6 +307,47 @@ a {
     font-size: 0.96rem;
 }
 
+/* REVIEW SECTION */
+.review-card {
+    max-width: 820px;
+    margin: 48px auto 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 34px;
+    box-shadow: var(--shadow-soft);
+    text-align: center;
+}
+
+.review-card p {
+    color: var(--muted);
+}
+
+.review-card a {
+    color: var(--accent-dark);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.review-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.review-actions a {
+    text-decoration: none;
+}
+
+.goodreads-link {
+    margin-top: 22px;
+    font-size: 0.95rem;
+    word-break: break-word;
+}
+
 /* FOOTER */
 .footer {
     background: var(--dark);
@@ -351,7 +402,8 @@ a {
     }
 
     .content-card,
-    .reader-card {
+    .reader-card,
+    .review-card {
         padding: 24px;
     }
 
@@ -364,11 +416,13 @@ a {
         width: 100%;
     }
 
-    .hero-actions {
+    .hero-actions,
+    .review-actions {
         width: 100%;
     }
 
-    .hero-actions .btn {
+    .hero-actions .btn,
+    .review-actions .btn {
         width: 100%;
     }
 
