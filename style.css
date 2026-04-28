@@ -99,7 +99,7 @@ a {
     font-weight: 700;
     margin-bottom: 14px;
 
-    /* Warm amber-gold matching the site's accent palette */
+    /* Gold fix */
     background: linear-gradient(
         135deg,
         #b07a2a 0%,
@@ -109,8 +109,10 @@ a {
         #8b5f1f 100%
     );
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* fallback fix */
+    display: inline-block; /* critical — gradient won't apply without this */
 }
 .hero-subtitle {
     font-size: 1.2rem;
