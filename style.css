@@ -93,13 +93,12 @@ a {
 }
 
 .hero h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: clamp(3rem, 6vw, 4.7rem);
-    line-height: 0.95;
-    font-weight: 700;
+    font-family: "Cinzel Decorative", cursive;
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    line-height: 1.25;
+    letter-spacing: 0.04em;
     margin-bottom: 14px;
-
-    /* Gold fix */
+    display: inline-block;
     background: linear-gradient(
         135deg,
         #b07a2a 0%,
@@ -111,8 +110,15 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent; /* fallback fix */
-    display: inline-block; /* critical — gradient won't apply without this */
+    color: transparent;
+}
+
+/* Cinzel Regular span just for the Ā */
+.hero h1 .a-regular {
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 1.08em;
+    vertical-align: -0.04em;
 }
 .hero-subtitle {
     font-size: 1.2rem;
